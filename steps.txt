@@ -1,4 +1,6 @@
 on terminal
+cd terraform-workspaces
+terraform init
 
 
 terraform workspace list (it will show the list of workspaces)
