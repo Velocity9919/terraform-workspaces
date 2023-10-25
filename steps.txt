@@ -41,6 +41,8 @@ terraform apply -var-file='prod.tfvars' --auto-approve    (it will create prod w
 it will create and store workspaces in S3 bucket
 
 
-terraform destroy -var-file='prode.tfvars' --auto-approve
+terraform destroy -var-file='dev.tfvars' --auto-approve
+terraform destroy -var-file='stage.tfvars' --auto-approve
+terraform destroy -var-file='prod.tfvars' --auto-approve
 
 
