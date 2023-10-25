@@ -1,42 +1,42 @@
 on terminal
 
 
-terraform workspce list (it will show the list of workspces)
+terraform workspace list (it will show the list of workspaces)
 
-terraform workspce new dev  (it will create new dev workspce)
+terraform workspace new dev  (it will create new dev workspace)
 
-terraform workspce new stage  (it will create new stage workspce)
+terraform workspace new stage  (it will create new stage workspace)
 
-terraform workspce new prod  (it will create new prod workspce)
+terraform worksapce new prod  (it will create new prod workspace)
 
-terraform workspce list
-
-
-
-terraform workspce select dev    (it will swich to the dev workspce)
-terraform workspce show       (it will show the present workspce)
-
-terraform apply -var-file='dev.tfvars' --auto-approve    (it will create dev workspce)
+terraform workspace list
 
 
 
-terraform workspce select stage  (it will swich to the stage workspce)
+terraform worksapce select dev    (it will swich to the dev workspace)
+terraform workspace show       (it will show the present workspace)
 
-terraform workspce show       (it will show the present workspce)
-
-terraform apply -var-file='stage.tfvars' --auto-approve    (it will create stage workspce)
-
+terraform apply -var-file='dev.tfvars' --auto-approve    (it will create dev workspace)
 
 
 
-terraform workspce select prod   (it will swich to the prod workspce)
+terraform workspace select stage  (it will swich to the stage workspace)
 
-terraform workspce show       (it will show the present workspce)
+terraform workspace show       (it will show the present workspace)
 
-terraform apply -var-file='prod.tfvars' --auto-approve    (it will create prod workspce)
+terraform apply -var-file='stage.tfvars' --auto-approve    (it will create stage workspace)
 
 
-it will create and store workspces in S3 bucket
+
+
+terraform workspace select prod   (it will swich to the prod workspace)
+
+terraform workspace show       (it will show the present workspace)
+
+terraform apply -var-file='prod.tfvars' --auto-approve    (it will create prod workspace)
+
+
+it will create and store workspaces in S3 bucket
 
 
 terraform destroy -var-file='prode.tfvars' --auto-approve
