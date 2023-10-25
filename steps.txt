@@ -9,7 +9,7 @@ terraform workspace new dev  (it will create new dev workspace)
 
 terraform workspace new stage  (it will create new stage workspace)
 
-terraform worksapce new prod  (it will create new prod workspace)
+terraform workspace new prod  (it will create new prod workspace)
 
 terraform workspace list
 
